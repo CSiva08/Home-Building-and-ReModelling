@@ -1,0 +1,184 @@
+<?php
+session_start();
+?>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <title>
+    HBM
+  </title>
+  <style>
+    .header{
+  background-image: url("Hbm_logo1.PNG");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;   
+  }
+h1{
+  font-size: xx-large;
+}
+.headerbuild{
+  background-image: url("interior.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;  
+}
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(104, 103, 103);
+    font-style: bold;
+    }
+    .navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    width:12%;
+    font-family: 'Times New Roman';  
+    }
+    .navbar:hover{
+      background-color:  rgb(104, 103, 103);
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+      font-style: bold;
+    }
+    
+    .dropdown .dropbtn { 
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      background-color: inherit;
+      font-family: inherit;
+      font-size: 25px;
+      margin: 0;
+      
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(175, 171, 171);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+  </head>
+  <body>
+    
+      <div class="navbar">
+        <b>
+        <a href="" class="right">HOME</a>
+        <div class="dropdown">
+          <button class="dropbtn">SERVICES
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="build.php">Build</a>
+            <a href="">Reconstruct</a>
+          </div>
+        </div> 
+        <a href="monitor.php" class="right">MONITER</a>
+        <a href="" class="right">PAYMENTS</a>
+        <a href="" class="right">ABOUT US</a>
+        <a href="contact.php" class="right">CONTACT US</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-fw fa-user"></i><i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="">PROFILE</a>
+            <a href="">LOGOUT</a>
+          </div>
+        </div> 
+      </b>   
+    </div>
+    <div class="header"></div>
+    </div>
+    <div class="body">
+      <h1><b>Our Services</b></h1>
+      <a href="build.html">
+        <img alt="Build" src="newhome.jpg"
+        width=250" height="300">
+
+     </a>
+     <a href="">
+      <img alt="Reconstruct" src="remodel.jpg"
+      width=250" height="300">
+   </a>
+    </div>
+    <div class="grey">
+<h1><u>PORTFOLIO</h1></u>
+<a href="portfolio.php">
+  <img alt="Build" src="home1.jpg"
+  width=250" height="300">
+
+</a>
+<a href="portfolio.php">
+<img alt="Reconstruct" src="home2.jpeg"
+width=250" height="300">
+</a>
+<a href="portfolio.php">
+  <img alt="Build" src="home3.jpg"
+  width=250" height="300">
+
+</a>
+<a href="portfolio.php">
+<img alt="Reconstruct" src="home4.jpg"
+width=250" height="300">
+</a>
+     </div>
+     <div class="body">
+<h1>HOW IT WORKS?</h1>
+</a>
+<img alt="" src="plan.jpg"
+width=1000" height="300">
+</a>
+     </div>
+     <div  class="grey">
+  
+      <h2>FOLLOW</h2>
+     <a href="https://www.facebook.com/profile.php?id=100072331284029" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/CSiva811" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/siva-c-722147208/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/channel/UClMKNVtWHQQ5x1K5-ECK9qg/featured" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/csiva08/" class="fa fa-instagram"></a>
+    
+      </div>
+   
+      
+    <?=$_SESSION['session_id'];?>
+  </body>
+</html>
